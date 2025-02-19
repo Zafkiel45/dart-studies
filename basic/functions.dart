@@ -1,15 +1,24 @@
 void main() {
-  // function is pratically the same than another languages, but here, the 
-  // "function" keywork is not necessary. 
-  // It's possible to use arrow function too.
-  int fibonacci(int n) {
+  // ➡️ A function is a object too. 
+  // ➡️ Function being a object, it can be passed to another functions 
+  // ➡️ Function is a object of type: Function
+  // ➡️ Funcition can be stored in variables too. 
 
-    if(n == 0 || n == 1) {
-      return n;
+  // example of a common function:
+  bool isGood(String animeName) {
+    if(animeName != "Assassins Pride") {
+      return true; 
+    } else {
+      return false;
     }
+  };
 
-    return fibonacci(n - 1) + fibonacci(n - 2);
-  }
+  if(isGood("Sousou no Frieren")) {
+    print("The name is good!");
+  } else {
+    print("The name is trash!");
+  };
 
-  print(fibonacci(20));
+  // 🏁 END OF BASIC ABOUT FUNCTION! NOW, SEE SPECIFIC TOPICS ABOUT FUNCTION 
+  // IN DATAILS IN THE FOLDER: functions 📁
 }
